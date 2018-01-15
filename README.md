@@ -7,4 +7,8 @@
 
 ## Difference between $() and ${}
 
-* `$(command)` is the same as `` `command` `` (!!!!)
+* `$(command)` is the same as `` `command` `` (!!!!). It stands for process substitution; it means, run `` `command` `` and put its output here. So
+
+```
+echo "Today is $(date). A fine day."
+```
