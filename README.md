@@ -41,3 +41,7 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 
 ## Math operation
 `echo "$((20+5))"`
+
+## jot description
+
+`jor -r 10 1 1000`, randomly generate 10 numbers between 1 and 1000
