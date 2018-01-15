@@ -18,6 +18,7 @@
 
 ### string length
 ${#string}
+
     ```
     string=abcdeijodjgdjdj
     echo ${#string}
