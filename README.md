@@ -23,4 +23,18 @@ ${#string}
 ```
 string=abcdeijodjgdjdj
 echo ${#string}
+
+```
+
+### Length of matching substring at beginning of string
+
+expr match "$string" '$substring'
+
+expr "$string : '$substring'
+
+```
+string=abcABC123ABCabc
+
+echo `expr match "$string" 'abc[A-Z]*.2'`
+echo `expr "$string" : 'abc[A-Z]*.2'`
 ```
