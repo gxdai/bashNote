@@ -17,6 +17,7 @@
 ## Manipulation strings
 
 ### string length
+
     ${#string}
 
     ```
