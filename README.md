@@ -38,3 +38,6 @@ string=abcABC123ABCabc
 echo `expr match "$string" 'abc[A-Z]*.2'`
 echo `expr "$string" : 'abc[A-Z]*.2'`
 ```
+
+## Math operation
+`echo "$((20+5))"`
