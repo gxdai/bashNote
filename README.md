@@ -7,4 +7,4 @@
 
 ## Difference between $() and ${}
 
-* `$(command)` is the same as ``command``
+* `$(command)` is the same as `` `command` `` (!!!!)
