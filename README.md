@@ -12,3 +12,4 @@
     ```
     echo "Today is $(date). A fine day."
     ```
+* `${variable}` is just a disambiguation mechanism, so you can say `${var}text` when you mean the contents of variable `var`, followed by `text`, (as apposed to `$vartext`)
