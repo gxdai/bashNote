@@ -17,7 +17,7 @@
 ## Manipulation strings
 
 ### string length
-${#string}
+    ${#string}
 
     ```
     string=abcdeijodjgdjdj
