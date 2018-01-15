@@ -20,7 +20,7 @@
 
 ${#string}
 
-    ```
-    string=abcdeijodjgdjdj
-    echo ${#string}
-    ```
+```
+string=abcdeijodjgdjdj
+echo ${#string}
+```
