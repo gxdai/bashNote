@@ -53,9 +53,11 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 `[[` is an improvement over `[`. 
 
     1. For example, with `[` you have to write
+
     ```Bash
     if [ -f $file]
     ```
+
     to correctly hand empty strings or file names with spaces in them. With `[[` the quotes are unnecessary:
     ```Bash
     if [[ -f $file ]]
