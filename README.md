@@ -77,6 +77,6 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 
 ## Regular expression
 ### Characters
-|ch     |                 example|        sample match|                  
-|---    |:---:                   |         :---:       |
-|`\d`   |                `file_\d\d`|  `file_25`|               
+|ch     |legends|                 example|        sample match|                  
+|---    |:---:  |:--:                 |         :---:       |
+|`\d`   |One digits 0-9|                `file_\d\d`|  `file_25`|               
