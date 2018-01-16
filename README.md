@@ -87,6 +87,7 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 |`\S`   |Not a space|  `\S\S\S\S`               | `Yoyo`|
 ### Quantifiers
 |quantifier|    legend  | Example| sample match|
+|---       |: --- :     | : --- : | : --- :    |
 |`+`       | one or more| `\w-\w+`| `A-b_1`     |
 |`{3}`     | 3times more| `\D{3}` | `ABC`|
 |`{2,4}`   | 2 to 4 times| `\d{2,4}`| `156`|
