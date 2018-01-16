@@ -74,3 +74,9 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
     ```Bash
     if [[ $ANSWER = y* ]]
     ```
+
+## Regular expression
+### Characters
+|ch|                 example|        sample match|                  
+|---                |:---:|         :---:       |
+|`\d|                |file_\d\d|  file_25|               
