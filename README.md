@@ -82,3 +82,15 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 |`\d`   |One digits 0-9|                `file_\d\d`|  `file_25`|               
 |`\w`   |word characters|`\w-\w\w\w`            | `A-b_1`|
 |`\s`   |space, newline, tab|`a\sb`               | `a b`|
+|`\D`   |Not a digit|   `\D\D\D`                | `ABC`|
+|`\W`   | Not a word| `\W\W\W\W`                |`*-+=)`|
+|`\S`   |Not a space|  `\S\S\S\S`               | `Yoyo`|
+### Quantifiers
+|quantifier|    legend  | Example| sample match|
+|`+`       | one or more| `\w-\w+`| `A-b_1`     |
+|`{3}`     | 3times more| `\D{3}` | `ABC`|
+|`{2,4}`   | 2 to 4 times| `\d{2,4}`| `156`|
+|`{3,}`    | 3 or more  | `\w{3,}`  | `regex_tutorial`|
+|`*`       | 0 or more  | `A*B*C`   | `AAACCC`|
+|`?`       | 1 or none  | `plurals?`| `plural`|
+
