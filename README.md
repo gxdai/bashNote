@@ -80,3 +80,5 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 |ch     |legends|                 example|        sample match|                  
 |---    |:---:  |:--:                 |         :---:       |
 |`\d`   |One digits 0-9|                `file_\d\d`|  `file_25`|               
+|`\w`   |word characters|`\w-\w\w\w`            | `A-b_1`|
+|`\s`   |space, newline, tab|`a\sb`               | `a b`|
