@@ -79,4 +79,4 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 ### Characters
 |ch|                 example|        sample match|                  
 |---                |:---:|         :---:       |
-|`\d|                |file_\d\d|  file_25|               
+|`\d`|                |`file_\d\d`|  `file_25`|               
