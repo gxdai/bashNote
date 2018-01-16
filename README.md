@@ -57,16 +57,16 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
     ```Bash
     if [ -f $file]
     ```
-to correctly hand empty strings or file names with spaces in them. With `[[` the quotes are unnecessary:
-```Bash
-if [[ -f $file ]]
-```
+  to correctly hand empty strings or file names with spaces in them. With `[[` the quotes are unnecessary:
+    ```Bash
+    if [[ -f $file ]]
+    ```
 - You can use `&&`, `||`, `<`, `>` with `[[`, but not with `[`.
 - `[[` is more compatible with regular expression. With `[` you might write
     ```Bash
     if [ "$answer" = y -o "$answer" = yes ]
     ```
-    With `[[` you can write this as
+  With `[[` you can write this as
     ```Bash
     if [[ $answer =~ ^y(es)?$ ]]
     ```
