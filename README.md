@@ -44,4 +44,21 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 
 ## jot description
 
-`jor -r 10 1 1000`, randomly generate 10 numbers between 1 and 1000
+`jot -r 10 1 1000`, randomly generate 10 numbers between 1 and 1000
+
+
+
+## Difference between [ and [[
+`[[` is an improvement over `[`. 
+    1. For example, with `[` you have to write
+    `if [ -f $file]`
+    to correctly hand empty strings or file names with spaces in them. With `[[` the quotes are unnecessary:
+    `if [[ -f $file ]]`
+    2. You can use `&&`, `||`, `<`, `>` with `[[`, but not with `[`.
+    3. `[[` is more compatible with regular expression. With `[` you might write
+    `if [ "$answer" = y -o "$answer" = yes ]`
+    With `[[` you can write this as
+    `if [[ $answer =~ ^y(es)?$ ]]`
+    4. Patten matching
+    `if [[ $ANSWER = y* ]]`
+
