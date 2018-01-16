@@ -52,7 +52,7 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 
 `[[` is an improvement over `[`. 
 
-    1. For example, with `[` you have to write
+    * For example, with `[` you have to write
 
     ```Bash
     if [ -f $file]
@@ -62,8 +62,8 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
     [//] ```Bash
     [//] if [[ -f $file ]]
     [//] ```
-    2. You can use `&&`, `||`, `<`, `>` with `[[`, but not with `[`.
-    3. `[[` is more compatible with regular expression. With `[` you might write
+    * You can use `&&`, `||`, `<`, `>` with `[[`, but not with `[`.
+    * `[[` is more compatible with regular expression. With `[` you might write
     ```Bash
     if [ "$answer" = y -o "$answer" = yes ]
     ```
@@ -71,7 +71,7 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
     ```Bash
     if [[ $answer =~ ^y(es)?$ ]]
     ```
-    4. Patten matching
+    * Patten matching
     ```Bash
     if [[ $ANSWER = y* ]]
     ```
