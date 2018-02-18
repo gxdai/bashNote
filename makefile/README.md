@@ -18,3 +18,9 @@ gcc -o hellomake hellomake.c hellofunc.c -I.
 hellomake: hellomake.c hellofunc.c  # The rule depends on two files
     gcc -o hellmake hellofunc.c hellomake.c -I.
 ```
+There must be a tap before any command for makefile
+
+
+### makefile2
+
+
