@@ -5,5 +5,5 @@ void myPrintHelloMake()
 {
     printf("Hello makefile\n");
 
-    return 0;
+    return; 
 }
