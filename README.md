@@ -94,4 +94,5 @@ echo `expr "$string" : 'abc[A-Z]*.2'`
 |`{3,}`    | 3 or more  | `\w{3,}`  | `regex_tutorial`|
 |`*`       | 0 or more  | `A*B*C`   | `AAACCC`|
 |`?`       | 1 or none  | `plurals?`| `plural`|
+### More characters
 
