@@ -12,3 +12,9 @@ gcc -o hellomake hellomake.c hellofunc.c -I.
 * compile all files if you changed one file
 
 ## Makefile
+
+### makefile1
+```
+hellomake: hellomake.c hellofunc.c  # The rule depends on two files
+    gcc -o hellmake hellofunc.c hellomake.c -I.
+```
