@@ -1,7 +1,7 @@
 # Learn python functions
 
 ## examples for namedtuple
-'''
+```
 import collections
 
 Person = collections.namedtuple('Person', 'name age gender')
@@ -17,7 +17,7 @@ print '\nField by index: '
 for p in [bob, jane]:
     print '%s is a %d year old %s' % p
 
-'''
+```
 
 
 
