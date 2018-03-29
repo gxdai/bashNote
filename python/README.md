@@ -35,7 +35,7 @@ Use join with list
 >>>','.join(['a', 'b', 'c'])
 
 >>>'a,b,c'
-
+```
 
 ### The build-in functin `iter` takes in an iterable orbject (list, string, dict, etc) and returns an iterator.
 ```
