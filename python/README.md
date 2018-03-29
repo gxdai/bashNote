@@ -19,5 +19,32 @@ for p in [bob, jane]:
 
 ```
 
+## Itertor & Generators
+
+### Iterators
+We use `for` statement for looping over a list.
+```
+for i in [1, 2, 3]:
+    print i,
 
 
+```
+
+Use join with list
+```
+>>>','.join(['a', 'b', 'c'])
+
+>>>'a,b,c'
+
+
+### The build-in functin `iter` takes in an iterable orbject (list, string, dict, etc) and returns an iterator.
+```
+x = iter([1, 2, 3])
+
+x.next()
+1
+x.next()
+2
+x.next()
+3
+```
