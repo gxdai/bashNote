@@ -174,3 +174,13 @@ There are two categories, environment variables (upper case) and shell variables
 * `who` checks who is working on the computer. (whoami).
 	* `whatis` shows a command instruction.
 * `tee` write what appears on your screen into a file.
+* `date, cal, which, whereis whatis`
+
+## File system
+* `Ext2` is like Unix file system. It has the concepts of blocks, inodes and directories.
+* `Ext3` It is backward compatible with ext2 file system.
+* `Isofs` used by CDROM file system.
+* `Procfs` acts as an interface to internal data structures.
+* `mount` and `umount`.
+	* Example: `mount -t iso9660 /dev/hdb /cdrom` (If cdrom doesn't exist, create it)
+	* Example: `mount -t vfat /dev/hda1 /mnt`
