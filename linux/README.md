@@ -171,3 +171,6 @@ There are two categories, environment variables (upper case) and shell variables
 * `/home` is user directory.
 * `shutdown -h`  
 * `touch -t 05070915 my_report.txt` change the time and date of files.
+* `who` checks who is working on the computer. (whoami).
+	* `whatis` shows a command instruction.
+* `tee` write what appears on your screen into a file.
