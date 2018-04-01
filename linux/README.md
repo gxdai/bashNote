@@ -151,5 +151,5 @@ There are two categories, environment variables (upper case) and shell variables
 * `setenv` set the ENVIRONMENT variables, display using `printenv` or `env`. And unset use `unsetenv`
 * shell variables, `history`, `cwd`, `home`, `path` and `prompt`. `set` is used to set or display shell variable
 
-
+## pip problem
 
