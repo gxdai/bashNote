@@ -161,3 +161,12 @@ There are two categories, environment variables (upper case) and shell variables
 * `|` The pip operator, the output of the first command is the input of the second command.
 * `$()` is the same as ````
 
+## [introduction of subdirectories](https://www.linux.org/threads/in-linux-everything-is-a-file.4251/)
+* `/dev` There are devices that your system will uses or can use.
+* `/root`
+* `/sbin` has frequently used programs.
+* `/tmp` stores temporary files.
+* `/var` is a directory for certain files that may change size.
+* `/lib` is for library files. **Normal error: can't find shared library**
+* `/home` is user directory.
+* 
