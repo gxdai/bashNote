@@ -169,4 +169,5 @@ There are two categories, environment variables (upper case) and shell variables
 * `/var` is a directory for certain files that may change size.
 * `/lib` is for library files. **Normal error: can't find shared library**
 * `/home` is user directory.
-* 
+* `shutdown -h`  
+* `touch -t 05070915 my_report.txt` change the time and date of files.
