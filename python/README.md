@@ -48,3 +48,10 @@ x.next()
 x.next()
 3
 ```
+### Generators simplifies creation of iterators. A generator is a function that produces a sequence of results instead of a single value.
+The Generator can only iterate over once. 
+
+`yield` is a keyword that is used like `return`, except the function will return a generator.
+
+To master `yield`, you must understand that **When you call the function, the code you have written in the function body does not run.**.
+
