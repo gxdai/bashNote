@@ -153,3 +153,11 @@ There are two categories, environment variables (upper case) and shell variables
 
 ## pip problem
 
+* `&` put program background.
+* `;` push multiple commands in a single line.
+* `&&` The second command would execute only if the first one succeeds.
+* `||` The second command would execute only if the first one fails.
+* `!` all except. `rm -r !(*html)` would delete all the files except html.
+* `|` The pip operator, the output of the first command is the input of the second command.
+* `$()` is the same as ````
+
