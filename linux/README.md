@@ -185,3 +185,4 @@ There are two categories, environment variables (upper case) and shell variables
 	* Example: `mount -t iso9660 /dev/hdb /cdrom` (If cdrom doesn't exist, create it)
 	* Example: `mount -t vfat /dev/hda1 /mnt`
 	* Exmaple `umount [mount point]`
+* `du -hsa`
