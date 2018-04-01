@@ -107,6 +107,6 @@ When a process is running, background or suspended, it will be entered into a li
 * `bg %jobnumber` to background a job
 * `fg %jobnumber` to foreground a job
 
-** Note: job number is different from PID **
+**Note: job number is different from PID**
 
 
