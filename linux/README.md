@@ -72,8 +72,10 @@ extract hardware information by reading data from DMI tables
 
 Most of these commands use files in `/proc` to extract the system information.
 
+## `dpkg`
+`dpgk` queries, installs, removes, and maintains Debian software package and their dependencies.
 
-
-
+* `dpkg -i` installs the package
+* `dpkg -r` removes the package. 
 
 
