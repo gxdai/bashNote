@@ -108,5 +108,48 @@ When a process is running, background or suspended, it will be entered into a li
 * `fg %jobnumber` to foreground a job
 
 **Note: job number is different from PID**
+**Note: Don't forget `%`**
+
+## `kill`
+
+kill the job nubmer or PID
+
+* `kill %jobnumber` or `kill PID`
+
+## `diff`
+
+`diff` compares the contents of two files and display the differences. Suppose you have a file called **file1** and **file2**. To see the difference
+
+`diff file1 file2`
+
+`<` denotes file1 and `>` denotes file2
+
+## `find`
+
+search through directory for files with a given name, date, size..
+
+* `find . -iname "*txt" 
+* `find . -size +1M -ls`
+
+## `history`
+
+Each command is given a number according to the order it was enterd.
+
+* `history` list all the command history
+* `!!` exectue the last command
+* `!-3` execute the third most recent command
+* `!5` execute the 5th command in list
+* `!grep` recall the last command starting wth grep 
+* `set history=100`, increasing the history buffer
+
+
+## Variables
+
+There are two categories, environment variables (upper case) and shell variables (lower case).
+
+* OSTYPE, USER, HOME, HOST, ARCH, DISPLAY, PRINTER, PATH
+* `setenv` set the ENVIRONMENT variables, display using `printenv` or `env`. And unset use `unsetenv`
+* shell variables, `history`, `cwd`, `home`, `path` and `prompt`. `set` is used to set or display shell variable
+
 
 
