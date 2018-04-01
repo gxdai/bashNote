@@ -1,0 +1,112 @@
+H/W path              Device      Class          Description
+============================================================
+                                  system         Precision T7610 (Precision T7610)
+/0                                bus            0NK70N
+/0/0                              memory         64KiB BIOS
+/0/4                              processor      Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz
+/0/4/5                            memory         384KiB L1 cache
+/0/4/6                            memory         1536KiB L2 cache
+/0/4/7                            memory         15MiB L3 cache
+/0/1                              processor      CPU [empty]
+/0/39                             memory         System Memory
+/0/39/0                           memory         8GiB DIMM DDR3 1866 MHz (0.5 ns)
+/0/39/1                           memory         DIMM Synchronous [empty]
+/0/39/2                           memory         8GiB DIMM DDR3 1866 MHz (0.5 ns)
+/0/39/3                           memory         DIMM Synchronous [empty]
+/0/39/4                           memory         8GiB DIMM DDR3 1866 MHz (0.5 ns)
+/0/39/5                           memory         DIMM Synchronous [empty]
+/0/39/6                           memory         8GiB DIMM DDR3 1866 MHz (0.5 ns)
+/0/39/7                           memory         DIMM Synchronous [empty]
+/0/4b                             memory         System Memory
+/0/4b/0                           memory         DIMM Synchronous [empty]
+/0/4b/1                           memory         DIMM Synchronous [empty]
+/0/4b/2                           memory         DIMM Synchronous [empty]
+/0/4b/3                           memory         DIMM Synchronous [empty]
+/0/4b/4                           memory         DIMM Synchronous [empty]
+/0/4b/5                           memory         DIMM Synchronous [empty]
+/0/4b/6                           memory         DIMM Synchronous [empty]
+/0/4b/7                           memory         DIMM Synchronous [empty]
+/0/2                              memory         
+/0/3                              memory         
+/0/100                            bridge         Xeon E7 v2/Xeon E5 v2/Core i7 DMI2
+/0/100/1                          bridge         Xeon E7 v2/Xeon E5 v2/Core i7 PCI Express Root Port 1a
+/0/100/1/0            scsi2       storage        SAS2308 PCI-Express Fusion-MPT SAS-2
+/0/100/1/0/0.0.0      /dev/sda    disk           1TB WDC WD10EZEX-75Z
+/0/100/1/0/0.0.0/1    /dev/sda1   volume         39MiB Windows FAT volume
+/0/100/1/0/0.0.0/2    /dev/sda2   volume         931GiB EXT4 volume
+/0/100/1/0/0.1.0      /dev/sdb    disk           500GB Samsung SSD 850
+/0/100/1/0/0.1.0/1    /dev/sdb1   volume         347GiB Windows NTFS volume
+/0/100/1/0/0.1.0/2    /dev/sdb2   volume         118GiB Extended partition
+/0/100/1/0/0.1.0/2/5  /dev/sdb5   volume         31GiB Linux swap volume
+/0/100/1/0/0.1.0/2/6  /dev/sdb6   volume         86GiB EXT4 volume
+/0/100/1.1                        bridge         Xeon E7 v2/Xeon E5 v2/Core i7 PCI Express Root Port 1b
+/0/100/2                          bridge         Xeon E7 v2/Xeon E5 v2/Core i7 PCI Express Root Port 2a
+/0/100/2/0                        display        GK106GL [Quadro K4000]
+/0/100/2/0.1                      multimedia     GK106 HDMI Audio Controller
+/0/100/3                          bridge         Xeon E7 v2/Xeon E5 v2/Core i7 PCI Express Root Port 3a
+/0/100/5                          generic        Xeon E7 v2/Xeon E5 v2/Core i7 VTd/Memory Map/Misc
+/0/100/5.2                        generic        Xeon E7 v2/Xeon E5 v2/Core i7 IIO RAS
+/0/100/5.4                        generic        Xeon E7 v2/Xeon E5 v2/Core i7 IOAPIC
+/0/100/11                         bridge         C600/X79 series chipset PCI Express Virtual Root Port
+/0/100/16                         communication  C600/X79 series chipset MEI Controller #1
+/0/100/16.2                       storage        C600/X79 series chipset IDE-r Controller
+/0/100/16.3                       communication  C600/X79 series chipset KT Controller
+/0/100/19             eth1        network        82579LM Gigabit Network Connection
+/0/100/1a                         bus            C600/X79 series chipset USB2 Enhanced Host Controller #2
+/0/100/1a/1           usb1        bus            EHCI Host Controller
+/0/100/1a/1/1                     bus            Integrated Rate Matching Hub
+/0/100/1b                         multimedia     C600/X79 series chipset High Definition Audio Controller
+/0/100/1c                         bridge         C600/X79 series chipset PCI Express Root Port 3
+/0/100/1c/0                       bus            uPD720201 USB 3.0 Host Controller
+/0/100/1c/0/0         usb3        bus            xHCI Host Controller
+/0/100/1c/0/0/2                   input          USB Receiver
+/0/100/1c/0/1         usb4        bus            xHCI Host Controller
+/0/100/1c.1                       bridge         C600/X79 series chipset PCI Express Root Port 2
+/0/100/1c.1/0         eth0        network        I210 Gigabit Network Connection
+/0/100/1d                         bus            C600/X79 series chipset USB2 Enhanced Host Controller #1
+/0/100/1d/1           usb2        bus            EHCI Host Controller
+/0/100/1d/1/1                     bus            Integrated Rate Matching Hub
+/0/100/1d/1/1/6                   input          USB Optical Mouse
+/0/100/1e                         bridge         82801 PCI Bridge
+/0/100/1f                         bridge         C600/X79 series chipset LPC Controller
+/0/100/1f.2                       storage        C600/X79 series chipset 6-Port SATA AHCI Controller
+/0/100/1f.3                       bus            C600/X79 series chipset SMBus Host Controller
+/0/5                              generic        Xeon E7 v2/Xeon E5 v2/Core i7 QPI Link 0
+/0/9                              generic        Xeon E7 v2/Xeon E5 v2/Core i7 QPI Link 1
+/0/a                              generic        Xeon E7 v2/Xeon E5 v2/Core i7 Power Control Unit 0
+/0/a.1                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Power Control Unit 1
+/0/a.2                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Power Control Unit 2
+/0/a.3                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Power Control Unit 3
+/0/b                              generic        Xeon E7 v2/Xeon E5 v2/Core i7 UBOX Registers
+/0/b.3                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 UBOX Registers
+/0/c                              generic        Xeon E7 v2/Xeon E5 v2/Core i7 Unicast Registers
+/0/c.1                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Unicast Registers
+/0/c.2                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Unicast Registers
+/0/d                              generic        Xeon E7 v2/Xeon E5 v2/Core i7 Unicast Registers
+/0/d.1                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Unicast Registers
+/0/d.2                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Unicast Registers
+/0/e                              generic        Xeon E7 v2/Xeon E5 v2/Core i7 Home Agent 0
+/0/e.1                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Home Agent 0
+/0/f                              generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 0 Target Address/Thermal Registers
+/0/f.1                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 0 RAS Registers
+/0/f.2                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers
+/0/f.3                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers
+/0/f.4                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers
+/0/f.5                            generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers
+/0/10                             generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 0
+/0/10.1                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 1
+/0/10.2                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 0
+/0/10.3                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 1
+/0/10.4                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 2
+/0/10.5                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 3
+/0/10.6                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 2
+/0/10.7                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 3
+/0/13                             generic        Xeon E7 v2/Xeon E5 v2/Core i7 R2PCIe
+/0/13.1                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 R2PCIe
+/0/13.4                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 QPI Ring Registers
+/0/13.5                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 QPI Ring Performance Ring Monitoring
+/0/16                             generic        Xeon E7 v2/Xeon E5 v2/Core i7 System Address Decoder
+/0/16.1                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Broadcast Registers
+/0/16.2                           generic        Xeon E7 v2/Xeon E5 v2/Core i7 Broadcast Registers
+/0/6                  scsi7       storage        
+/0/6/0.0.0            /dev/cdrom  disk           DVD+-RW GTA0N
