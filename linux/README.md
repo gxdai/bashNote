@@ -78,4 +78,35 @@ Most of these commands use files in `/proc` to extract the system information.
 * `dpkg -i` installs the package
 * `dpkg -r` removes the package. 
 
+## `apropos`
+When you are not sure of the exact name of a command
+
+## `chmod`
+change mode for files, example
+
+* `chmod go-rwx` remove `rwx` for group and other.
+* `chmod go+rwx` add `rwx` for group and other.
+
+## `ps`
+A process is an executing program identified by unique PID (process identifier). To to see information about your system, with their associated PID and status, type
+
+
+## `sleep`
+wait sometime before command line to prompt, example
+
+* `sleep 10` will wati 10 seconds.
+
+## `ctrl+z` 
+
+Suspend the process and then `bg` to make it background
+
+## `jobs`
+
+When a process is running, background or suspended, it will be entered into a list with job number,
+
+* `bg %jobnumber` to background a job
+* `fg %jobnumber` to foreground a job
+
+** Note: job number is different from PID **
+
 
