@@ -206,7 +206,7 @@ and any files with suffix .list under the directory
     * **add-apt-repository**. Example "sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ saucy universe multiverse"
     * **lsb_release -sc** to find out the release. 
     * Add other repositories at the end of sources.list file
-    * *PPA (personal package archive)*. Use add-apt-repository 
+    * **PPA (personal package archive)**. Use add-apt-repository 
         1. The command upates sources.list or files under sources.list.d
         2. If a public key is required and available it is automatically downloaded and registered.
         3. Should be install by default.
