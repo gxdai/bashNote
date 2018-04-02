@@ -200,7 +200,7 @@ and any files with suffix .list under the directory
     * Start with `#` are comments 
     * **deb**:, these repositories contain binaries or precompiled packages. These packages are required by most users.
     * **deb-src**:, these repositories contain the source code of the packages. Useful for developers.
-    * **[http://archive.ubuntu.com/ubuntu](http://archive.ubuntu.com/ubuntu): The URI (Uniform Resource Identifier), in this case a location on the internet.
+    * **[http://archive.ubuntu.com/ubuntu](http://archive.ubuntu.com/ubuntu)**: The URI (Uniform Resource Identifier), in this case a location on the internet.
     * **saucy** is the release name or version of your distribution.
     * **main&restricted** are the section names or components. There can be several section names, separated by spaces.
     * **add-apt-repository**. Example "sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ saucy universe multiverse"
