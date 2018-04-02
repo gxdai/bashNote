@@ -187,3 +187,13 @@ There are two categories, environment variables (upper case) and shell variables
 	* Exmaple `umount [mount point]`
 * `du -hsa`
 * `adduser` add users to system.
+
+## [Repository](https://help.ubuntu.com/community/Repositories/CommandLine)
+This section introduces how to manage software repositories.
+
+1. Ubuntu uses `apt` for package management. `apt` stores a list of repositories or software channels in the file 
+`/etc/apt/sources.list`
+and any files with suffix .list under the directory
+`/etc/apt/sources.list.d/`
+
+By editting these files from the command line, we can add, remove, or temporarily disable software repositories. 
