@@ -186,3 +186,4 @@ There are two categories, environment variables (upper case) and shell variables
 	* Example: `mount -t vfat /dev/hda1 /mnt`
 	* Exmaple `umount [mount point]`
 * `du -hsa`
+* `adduser` add users to system.
