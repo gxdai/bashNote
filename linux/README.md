@@ -263,4 +263,4 @@ The linux system mainly consists of two parts: a *kernel* and a set of commands 
     * *;* for multiple commands in the same line.
     * **command-name** [ *option* ] ... [ *args* ] ...          # backets are used indicate *optional* parts of the a command. THe brackets are not needed.
     * Example: `ls --help` for most useful commands display. 
-    * ![Command interpreter loop](./commandInterpreterLoop.png =50x)
+    * ![Command interpreter loop](commandInterpreterLoop.png =50x)
