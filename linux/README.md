@@ -323,3 +323,8 @@ Redirecting the output of one program as input to another program.
     * ![I/O Redirection](./ioredirection.png)
 * Job control commands. 
 <img alt="Job control commands" src="./jobControlCMD.png" width="600">
+* Command history
+
+<img alt="commands history" src="./cmd_history.png" width="600">
+
+* **alias**: `alias name=value ...` **Don't forget quotes**
