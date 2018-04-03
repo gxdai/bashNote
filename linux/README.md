@@ -306,7 +306,7 @@ A user needs the **x** permission to enter a directory, the **r** permission to 
 * `PATH` defines the *command search path*, a list of directories containning executable commands.
 * `/usr/local/bin` where you install extra applications to your Linux and a `bin` in your home directory.
 * A special `.` is often placed at the end of the search path to enable you to invoke any command in current directories. `export PATH=$PATH:.`
-* `**which** command_name` displays the alias/function or the full path of the executable file.
+* `which command_name` displays the alias/function or the full path of the executable file.
 ### Standard input and output
 
 * File descriptor 0, *standard input* or **stdin**.
