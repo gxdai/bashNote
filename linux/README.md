@@ -108,7 +108,7 @@ When a process is running, background or suspended, it will be entered into a li
 * `fg %jobnumber` to foreground a job
 
 **Note: job number is different from PID**
-**Note: Don't forget `%`**
+**Note: Don\'t forget `%`**
 
 ## `kill`
 
@@ -167,7 +167,7 @@ There are two categories, environment variables (upper case) and shell variables
 * `/sbin` has frequently used programs.
 * `/tmp` stores temporary files.
 * `/var` is a directory for certain files that may change size.
-* `/lib` is for library files. **Normal error: can't find shared library**
+* `/lib` is for library files. **Normal error: can\'t find shared library**
 * `/home` is user directory.
 * `shutdown -h`  
 * `touch -t 05070915 my_report.txt` change the time and date of files.
@@ -182,7 +182,7 @@ There are two categories, environment variables (upper case) and shell variables
 * `Isofs` used by CDROM file system.
 * `Procfs` acts as an interface to internal data structures.
 * `mount` and `umount`.
-	* Example: `mount -t iso9660 /dev/hdb /cdrom` (If cdrom doesn't exist, create it)
+	* Example: `mount -t iso9660 /dev/hdb /cdrom` (If cdrom doesn\'t exist, create it)
 	* Example: `mount -t vfat /dev/hda1 /mnt`
 	* Exmaple `umount [mount point]`
 * `du -hsa`
@@ -279,7 +279,7 @@ Here is file structure image.
 
 * file name shoud avoid white space and any leading hyphen (-).
 * **u** (the owner or creater of the file)
-* **g** (Members in the file's group)
+* **g** (Members in the file\'s group)
 * **o** (others)
 * **r** (read permission, first bit)
 * **w** (write permission, second bit)
@@ -287,7 +287,6 @@ Here is file structure image.
 
 ### directory
 A user needs the **x** permission to enter a directory, the **r** permission to list filenames in the directory, and the **w** permission to create/delete files in the directory.
-
 * `chmod o-w filename` remove write permission for others.
 * `chmod a+x filename` add execute permission for all the users.
 * `chmod u-w+x filename` remove write permission and add execute permission for user.
