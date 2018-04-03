@@ -264,3 +264,12 @@ The linux system mainly consists of two parts: a *kernel* and a set of commands 
     * **command-name** [ *option* ] ... [ *args* ] ...          # backets are used indicate *optional* parts of the a command. THe brackets are not needed.
     * Example: `ls --help` for most useful commands display. 
     * <img src="./commandInterpreterLoop.png" alt="Command interpreter loop" width="600">
+* `echo` examine the value of a *Shell variable*.
+* `uname -all` identify the operating system version running on your computer.
+* `who` list the current users singed in on the system.
+* `.file` are hidden files, which are usually are standard operating systems or application files for configuration or other prescribed purposes.
+* `.bash_profile` is standard file for the Bash Shell.
+* `passwd` change the password.
+
+### File structure
+<img src="fileStructure.png" alt="A sample file tree" width="600">
