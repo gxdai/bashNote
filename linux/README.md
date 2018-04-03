@@ -213,4 +213,30 @@ and any files with suffix .list under the directory
 3. Suggestions. 
     1. always backup sources.list
 
+## [Bash programming](https://www.linux.org/threads/programming-with-bash.4234/)
+`#1` (shebang) are followed with the path to Bash interpreter. (Example: `#!/bin/bash`)
+
+**When you use a command as a variable, it must be put inside backticks(``) or ($()).**
+
+ENVIRONMENT VARIABLES EXAMPLE:
+```
+echo "You are user $UID on $HOSTNAME".
+echo "Your home directory is $HOME".
+echo "$HOSTNAME is running on $OSTYPE".
+```
+### Interactive script
+```
+#!/bin/bash
+
+echo -n "Enter the name of a city: "
+read CITY
+echo -n $CITY is "
+case $CITY in 
+London | Paris | Berlin | Rome) echo -n "in Europe";;
+"New York" | Chicago | Washington) echo -n "in USA";;
+Tokyo | Beijing | Bangalore) echo -n "in Asia";;
+*) echo -n "some place - but I don't know where";;
+esac
+```
+
 
