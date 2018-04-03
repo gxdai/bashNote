@@ -3,5 +3,6 @@
 Each command line undergoes a number of transformations before it is executed by the Shell. These transformations are called *Shell expansions*. 
 * `ls -l \*html`: *filename expansion*.
 ![bash expansion](./bashExpansion.png)
-
+* Command history
+<img alt="commands history" src="./cmd_history.png" width="600">
 
