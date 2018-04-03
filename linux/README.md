@@ -157,7 +157,7 @@ There are two categories, environment variables (upper case) and shell variables
 * `;` push multiple commands in a single line.
 * `&&` The second command would execute only if the first one succeeds.
 * `||` The second command would execute only if the first one fails.
-* `!` all except. `rm -r !(*html)` would delete all the files except html.
+* `!` all except. `rm -r !(\*html)` would delete all the files except html.
 * `|` The pip operator, the output of the first command is the input of the second command.
 * `$()` is the same as ````
 
@@ -276,3 +276,49 @@ Here is file structure image.
 
 
 <img src="./structure.png" alt="Command interpreter loop" width="500">
+
+* file name shoud avoid white space and any leading hyphen (-).
+* **u** (the owner or creater of the file)
+* **g** (Members in the file's group)
+* **o** (others)
+* **r** (read permission, first bit)
+* **w** (write permission, second bit)
+* **x** (Execute permission, third bit)
+
+### directory
+A user needs the **x** permission to enter a directory, the **r** permission to list filenames in the directory, and the **w** permission to create/delete files in the directory.
+
+* `**chmod** o-w filename` remove write permission for others.
+* `**chmod** a+x filename` add execute permission for all the users.
+* `**chmod** u-w+x filename` remove write permission and add execute permission for user.
+* `**chmod** a=rw filename` reset read and write permission for all users.
+
+### [Consulting Linux Documentation](http://tldp.org)
+* FAQ
+* Topic-specific step-by-step instructions (HOWTOs)
+* Two kinds of commands.
+    * Built-in Shell commands that are subroutines in the Shell.
+    * regular commands that are initiated as jobs controlled by the Shell.
+    * user-supplied arguments are shown in *italics*.
+    * Optional arguments are shown in square bracket [].
+    * Possibly repeated arguments are indicated by cllipses (...).
+    * Example: `ls -l -t /home/gxdai /home`
+* `PATH` defines the *command search path`*, a list of directories containning executable commands.
+* `/usr/local/bin` where you install extra applications to your Linux and a `bin` in your home directory.
+* A special `.` is often placed at the end of the search path to enable you to invoke any command in current directories. `export PATH=$PATH:.`
+* `**which** command_name` displays the alias/function or the full path of the executable file.
+### Standard input and output
+* File descriptor 0, *standard input* or **stdin**.
+* File descriptor 1, *standard output* or **stdout**.
+* File descriptor 2, *standard error* or **stderr**.
+* Redirection `>, <, |`
+* `>>` append
+* `command > file 2>&1` (**stderr** joins **stdout** into file)
+* `command > file1 2>file2 (send to different files)
+* `**cat** > file`. All the content you typed on the keyboard will be in file. CTRL+D to end
+### Pipe
+Redirecting the output of one program as input to another program.
+* `**ls** -lt | **more**` pipes the standard output of `**ls** -lt` to the standard input of **more**.
+* **Difference between `|` and `>`.
+    * The receiving end of a pip `|` is always another program and the receiving end of `>` is always a file.
+    * ![I/O Redirection](./ioredirection.png =100)
