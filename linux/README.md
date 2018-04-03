@@ -272,4 +272,5 @@ The linux system mainly consists of two parts: a *kernel* and a set of commands 
 * `passwd` change the password.
 
 ### File structure
+Here is file structure image:
 <img src="fileStructure.png" alt="A sample file tree" width="600">
