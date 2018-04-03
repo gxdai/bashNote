@@ -315,10 +315,11 @@ A user needs the **x** permission to enter a directory, the **r** permission to 
 * `>>` append
 * `command > file 2>&1` (**stderr** joins **stdout** into file)
 * `command > file1 2>file2` (send to different files).
-* `cat > file`. All the content you typed on the keyboard will be in file. CTRL+D to end
+\* `cat > file`. All the content you typed on the keyboard will be in file. CTRL+D to end.
+
 ### Pipe
 Redirecting the output of one program as input to another program.
 * `**ls** -lt | **more**` pipes the standard output of `**ls** -lt` to the standard input of **more**.
-* **Difference between `|` and `>`.
+* Difference between `|` and `>`.
     * The receiving end of a pip `|` is always another program and the receiving end of `>` is always a file.
     * ![I/O Redirection](./ioredirection.png =100)
