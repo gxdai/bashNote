@@ -303,7 +303,7 @@ A user needs the **x** permission to enter a directory, the **r** permission to 
     * Optional arguments are shown in square bracket [].
     * Possibly repeated arguments are indicated by cllipses (...).
     * Example: `ls -l -t /home/gxdai /home`
-* `PATH` defines the *command search path`*, a list of directories containning executable commands.
+* `PATH` defines the *command search path*, a list of directories containning executable commands.
 * `/usr/local/bin` where you install extra applications to your Linux and a `bin` in your home directory.
 * A special `.` is often placed at the end of the search path to enable you to invoke any command in current directories. `export PATH=$PATH:.`
 * `**which** command_name` displays the alias/function or the full path of the executable file.
@@ -312,9 +312,9 @@ A user needs the **x** permission to enter a directory, the **r** permission to 
 * File descriptor 0, *standard input* or **stdin**.
 * File descriptor 1, *standard output* or **stdout**.
 * File descriptor 2, *standard error* or **stderr**.
-* Redirection `>, <, |`
-* `>>` append
-* `command > file 2>&1` (**stderr** joins **stdout** into file)
+* **Redirection** `>, <, |`
+* `>>` **append**
+* `command > file 2>&1`, (**stderr** joins **stdout** into file)
 * `command > file1 2>file2` (send to different files).
 * `cat > file`. All the content you typed on the keyboard will be in file. CTRL+D to end.
 
