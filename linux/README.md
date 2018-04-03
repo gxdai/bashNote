@@ -288,10 +288,10 @@ Here is file structure image.
 ### directory
 A user needs the **x** permission to enter a directory, the **r** permission to list filenames in the directory, and the **w** permission to create/delete files in the directory.
 
-* `**chmod** o-w filename` remove write permission for others.
-* `**chmod** a+x filename` add execute permission for all the users.
-* `**chmod** u-w+x filename` remove write permission and add execute permission for user.
-* `**chmod** a=rw filename` reset read and write permission for all users.
+* `chmod o-w filename` remove write permission for others.
+* `chmod a+x filename` add execute permission for all the users.
+* `chmod u-w+x filename` remove write permission and add execute permission for user.
+* `chmod a=rw filename` reset read and write permission for all users.
 
 ### [Consulting Linux Documentation](http://tldp.org)
 * FAQ
