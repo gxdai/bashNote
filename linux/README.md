@@ -239,4 +239,28 @@ Tokyo | Beijing | Bangalore) echo -n "in Asia";;
 esac
 ```
 
+## [Mastering Linux](http://ketabnak.com/redirect.php?dlid=66085)
 
+### Linux system
+The linux system mainly consists of two parts: a *kernel* and a set of commands and applications.
+* The *kernel* deals with central functions, including concurrent program execution, memory management, input/output, file service, and network service.
+* Commands and applications supply other operations such as Shell, language compilers, text editor, etc.
+* *Shell* is a special program in Linux, which is a command interpreter that allows users to type commands and run programs. 
+
+### LAN (local area network)
+
+### [GNONE vs KDE](http://www.differencebetween.info/difference-between-kde-and-gnome)
+**GNOME** and **KDE** are Linux desktop systems.
+* **gnome-terminal**(GNOME) vs. **konsole**(KDE)
+* A terminal window emulates a character-based computer terminal and allows you to use Linux through a *command interpreter* called the *Shell*.
+* *Command interpreter* == *Shell*. The *Shell* indicates its readiness to take your commands by displaying a *prompt* at the beginning of a line.
+* You need a terminal window to use a *Shell*, which is your CLI to interact with Linux.
+* THe *Shell* displays a prompt to signal that it is ready for your next command, which it then interprets and executes.
+    * `echo $0` print out the name of the shell you are using.
+* Command syntax (separated by space)
+    * *command name*
+    * *argument*
+    * *;* for multiple commands in the same line.
+    * **command-name** [ *option* ] ... [ *args* ] ...          # backets are used indicate *optional* parts of the a command. THe brackets are not needed.
+    * Example: `ls --help` for most useful commands display. 
+    * [Command interpreter loop](./commandInterpreterLoop.png)
