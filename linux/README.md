@@ -323,7 +323,7 @@ Redirecting the output of one program as input to another program.
     * ![I/O Redirection](./ioredirection.png)
 
 ### Job control commands. 
-![alt text](./ioredirection.png)
+![alt text](./jobControlCMD.png)
 
 ![Job control commands](./jobControlCMD.png)
 
