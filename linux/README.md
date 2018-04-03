@@ -321,8 +321,11 @@ Redirecting the output of one program as input to another program.
 * Difference between `|` and `>`.
     * The receiving end of a pip `|` is always another program and the receiving end of `>` is always a file.
     * ![I/O Redirection](./ioredirection.png)
-* Job control commands. 
+
+### Job control commands. 
+Job commands.
+![alt text](./ioredirection.png)
+
 ![Job control commands](./jobControlCMD.png)
-<p>
+
 <img alt="Job control commands" src="./jobControlCMD.png" width="100">
-</p>
