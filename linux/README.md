@@ -118,11 +118,9 @@ kill the job nubmer or PID
 
 ## `diff`
 
-`diff` compares the contents of two files and display the differences. Suppose you have a file called **file1** and **file2**. To see the difference
-
-`diff file1 file2`
-
-`<` denotes file1 and `>` denotes file2
+* `diff` compares the contents of two files and display the differences. Suppose you have a file called file1 and **file2**. To see the difference
+* `diff file1 file2`
+* `<` denotes file1 and `>` denotes file2
 
 ## `find`
 
@@ -167,7 +165,7 @@ There are two categories, environment variables (upper case) and shell variables
 * `/sbin` has frequently used programs.
 * `/tmp` stores temporary files.
 * `/var` is a directory for certain files that may change size.
-* `/lib` is for library files. **Normal error: can\'t find shared library**
+* `/lib` is for library files. Normal error: can\'t find shared library
 * `/home` is user directory.
 * `shutdown -h`  
 * `touch -t 05070915 my_report.txt` change the time and date of files.
@@ -251,7 +249,7 @@ The linux system mainly consists of two parts: a *kernel* and a set of commands 
 
 ### [GNONE vs KDE](http://www.differencebetween.info/difference-between-kde-and-gnome)
 **GNOME** and **KDE** are Linux desktop systems.
-* **gnome-terminal**(GNOME) vs. **konsole**(KDE)
+* **gnome-terminal**(GNOME)** vs. **konsole**(KDE)
 * A terminal window emulates a character-based computer terminal and allows you to use Linux through a *command interpreter* called the *Shell*.
 * *Command interpreter* == *Shell*. The *Shell* indicates its readiness to take your commands by displaying a *prompt* at the beginning of a line.
 * You need a terminal window to use a *Shell*, which is your CLI to interact with Linux.
