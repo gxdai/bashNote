@@ -320,4 +320,4 @@ Redirecting the output of one program as input to another program.
 * `ls -lt | more` pipes the standard output of `ls -lt` to the standard input of **more**.
 * Difference between `|` and `>`.
     * The receiving end of a pip `|` is always another program and the receiving end of `>` is always a file.
-    * ![I/O Redirection](./ioredirection.png =250x)
+    * ![I/O Redirection](./ioredirection.png | width=100)
