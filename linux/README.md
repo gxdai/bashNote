@@ -273,4 +273,4 @@ The linux system mainly consists of two parts: a *kernel* and a set of commands 
 
 ### File structure
 Here is file structure image:
-<img src="./commandInterpreterLoop.png" alt="Command interpreter loop" width="600">
+![file structure](./commandInterpreterLoop.png =200x)
