@@ -36,7 +36,36 @@ abcde
 xde
 ```
 
-`$(( ... ))` are used to perform arithmetic operations (including \+ \- \* \/ \+\% \*\* \+\+ \-\-)
+`$(( ... ))` are used to perform arithmetic operations (including \+ \- \* \/ \+\% \*\* \+\+ \-\-). For example
+```
+count=7
+echo $(( 3*count ))
+echo $(( count%5 ))
+echo $(( count++ ))
+```
+* `set` display all variables and functions.
+* `declare` display all variables and functions.
+* ` declare` display all functions.
 
+### Command Expansion
+Command expansion makes it possible to use the standard output of a command as a string of words in another command. Either `$(command)` or `\`command\`` can be used for command expansion. For example,
+`dir`=$(pwd)`
 
+Another example `file1=$dir1/test.c`
+
+### Process Expansion
+Bash extends the ideas of I/O redirection one step further by allowing the notation
+```
+<(command *args*..)
+```
+to be used where a **filename** argument is expected for a command. Thus, the notation `<(...)` produces a temporary file, with the output produced by the command line inside, which can be given to anther command. For example
+```
+nano <(ls -l -F)
+```
+Another example
+```
+diff <(ls -F /usr/bin) <(ls -F /usr/bin.old)
+```
+
+### Filename Expansion
 
