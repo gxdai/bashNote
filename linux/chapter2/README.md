@@ -68,4 +68,11 @@ diff <(ls -F /usr/bin) <(ls -F /usr/bin.old)
 ```
 
 ### Filename Expansion
-
+*filename pattern* and *glob pattern* is used in a command line. A pattern may match simple filenames as well as full or relative pathnames. If a pattern does not match any file, then it stands for itself and is not expanded. `\*, \?, \[\]`. 
+* `\*` matches any sequence of zero or more characters. For example
+```
+ls -l *.c
+```
+```
+ls -l ../*.c
+```
