@@ -69,7 +69,7 @@ diff <(ls -F /usr/bin) <(ls -F /usr/bin.old)
 
 ### Filename Expansion
 *filename pattern* and *glob pattern* is used in a command line. A pattern may match simple filenames as well as full or relative pathnames. If a pattern does not match any file, then it stands for itself and is not expanded. `*, ?, []`. 
-* `*` matches any sequence of zero or more characters. For example
+* `\*` matches any sequence of zero or more characters. For example
 ```
 ls -l *.c
 ```
@@ -80,4 +80,8 @@ ls ~/Pictures/2011*/*jpg
 * `?` matches any single character
 * `[..]` matches any one of the characters contained between \[ and \] (*range pattern*). For instance `a[rxz]b` matches `arc, axb, azb`. `chapter[0-9]` matches `chapter0, chapter1...`
 * `[^..]` matches any one of the characters not contained between \[ and \] (*range pattern*). For instance `a[rxz]b` matches `arc, axb, azb`. `chapter[0-9]` matches `chapter0, chapter1...`
-* `[:class:]` Specifies a *class* of characters, in a range pattern. The class can be **alnum**, **alpha**, **digit**, **lower** and **upper**.
+* `[:class:]` Specifies a *class* of characters, in a range pattern. The class can be **alnum**, **alpha**, **digit**, **lower** and **upper**. Example
+    ```
+    ls [[:digit:]]*
+    ```
+    The pattern matches all files whose name starts with a digit.
