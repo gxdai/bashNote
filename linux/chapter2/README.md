@@ -99,6 +99,6 @@ The differences are:
 * When you *execute* the script, you are opening a new shell, type the commands in the new shell, copy the output back to the current shell, then close the new shell. Any changes to environment will take effect only in the new shell and will be lost once the shell is closed.
 * When you *source* the script you are typing the commands in your current shell. Any changes to the environment will take effect and stay in your current shell.
 
-** Use source if  you want the script to change the environment in your currently running shell. Use execute otherwise.**
+**Use source if  you want the script to change the environment in your currently running shell. Use execute otherwise.**
 
 
