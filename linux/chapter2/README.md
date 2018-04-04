@@ -75,4 +75,7 @@ ls -l *.c
 ```
 ```
 ls -l ../*.c
+ls ~/Pictures/2011*/*jpg
 ```
+* `\?` matches any single character
+* `\[..\]` matches any one of the characters contained between \[ and \] (*range pattern*). For instance `a[rxz]b` matches `arc, axb, azb`. `chapter[0-9]` matches `chapter0, chapter1...`
