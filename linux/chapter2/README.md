@@ -85,3 +85,20 @@ ls ~/Pictures/2011*/*jpg
     ls [[:digit:]]*
     ```
     The pattern matches all files whose name starts with a digit.
+
+### Bash Built-in Commands
+`help` list all the Bash built-in commands. Bash maintains a *directory stack*. By default, it contains the current working directory. The built-in **pushd** changes to the given directory and push it onto the stack. The built-in **popd** changes to the top directory on the stack after popping it off the stack.
+
+The Bash built-in command **source** ( or simply a dot .) A file of Shell commands is known as a *Shell script*.
+```
+source script
+. script
+```
+#### [Explain between source file vs. ./file](https://superuser.com/questions/176783/what-is-the-difference-between-executing-a-bash-script-vs-sourcing-it)
+The differences are:
+* When you *execute* the script, you are opening a new shell, type the commands in the new shell, copy the output back to the current shell, then close the new shell. Any changes to environment will take effect only in the new shell and will be lost once the shell is closed.
+* When you *source* the script you are typing the commands in your current shell. Any changes to the environment will take effect and stay in your current shell.
+
+** Use source if  you want the script to change the environment in your currently running shell. Use execute otherwise.**
+
+
