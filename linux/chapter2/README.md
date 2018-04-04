@@ -79,3 +79,5 @@ ls ~/Pictures/2011*/*jpg
 ```
 * `\?` matches any single character
 * `\[..\]` matches any one of the characters contained between \[ and \] (*range pattern*). For instance `a[rxz]b` matches `arc, axb, azb`. `chapter[0-9]` matches `chapter0, chapter1...`
+* `\[^..\]` matches any one of the characters not contained between \[ and \] (*range pattern*). For instance `a[rxz]b` matches `arc, axb, azb`. `chapter[0-9]` matches `chapter0, chapter1...`
+* `\[:class:\]` Specifies a *class* of characters, in a range pattern. The class can be **alnum**, **alpha**, **digit**, **lower** and **upper**.
