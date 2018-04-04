@@ -27,8 +27,16 @@ IF there are blank (proceded by a backslash \\). `unset var` to remove any varia
 The *extent* of a variable name can be delineated by braces ({ and }). For example
 ```
 x=abc
-ech ${x}de
+echo ${x}de
+echo $xde
 ```
+The results are different
+```
+abcde
+xde
+```
+
+`$(( ... ))` are used to perform arithmetic operations (including \+ \- \* \/ \+\% \*\* \+\+ \-\-)
 
 
 
