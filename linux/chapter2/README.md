@@ -13,6 +13,22 @@ Each command line undergoes a number of transformations before it is executed by
 * `~` expands the user's own home directory, `~+` the current directory, `~-` the previous directory.
 ### Variable Expansion
 
-`var=value` (sets variable value). **NO white space is allowed immediately before or after the equal sign (=)**
+`var=value` (sets variable value). **NO white space is allowed immediately before or after the equal sign (=)**. For example
+```
+ldir=/usr/local
+
+echo $ldir
+```
+This will print out `/usr/local`
+
+IF there are blank (proceded by a backslash \\). `unset var` to remove any variable *var*.
+
+
+The *extent* of a variable name can be delineated by braces ({ and }). For example
+```
+x=abc
+ech ${x}de
+```
+
 
 
