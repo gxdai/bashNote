@@ -101,4 +101,23 @@ The differences are:
 
 **Use source if  you want the script to change the environment in your currently running shell. Use execute otherwise.**
 
+### Shell Variables
+Here is a list of oether special variables
+* `USER, PWD, OLDPWD, HOME, SHELL, HISTSIZE, HOSTSIZE, PATH, CDPATH`
+
+### Environment of a Program
+The execution environment of every process consists of two parts: user defined and systerm defined. `USER, PWD` are determined by the system and passed on from your Shell to any invoded applications; whereas quantities
+
+Command execution will create a *child process* and transmits to it an execution environment
+* Standar I/O and otther open files.
+* Current working directoy
+* File create mask.
+* Environment variables already in the Shell's own execution environment and additional ones defined by the user.
+
+Instead of `export` and `unset`, you add variables to the environment on a per-command biasis. When you issue any regular command, you can set variables in front of the command name to add them the *environment passed to the command* without affecting the environment of the Shell itself. For example:
+```
+YEAR=2011 bash
+```
+
+
 
