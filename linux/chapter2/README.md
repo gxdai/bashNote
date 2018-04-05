@@ -118,6 +118,18 @@ Instead of `export` and `unset`, you add variables to the environment on a per-c
 ```
 YEAR=2011 bash
 ```
+The subshell will have an environment variable **YEAR** set to the value 2011 while your Shell remains unchanged.
+
+**In bash, any variables can become environment variables by the `export` command. However it is a good practice to use all uppercase names for environment variables.**
+
+### Example of Bash Usage
+#### Customized prompt
+The shell displays a prompt when it is ready for your next command. In GNU Linux, the default Bash prompt `PS1='\s-\v\$'`, meaning *-Shell_base_name-version$*. For example,
+```
+-bash-3.2$(#: for root)
+```
+
+
 
 
 
