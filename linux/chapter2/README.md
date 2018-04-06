@@ -216,6 +216,35 @@ function fnName () {
         echo $a
     done
     ```
+    run `./test.sh one two "thre foour".
+    * case 1 ("$*"): the parameters are treated as one long quoted string. `one two three four`.
+        ```
+        Using "$*"
+        one two three four
+        ```
+    * case 2 ($*): The string are broken into words by `for` loop. 
+        ```
+        Using $*
+        one
+        two
+        three
+        four
+        ```
+    * case 3 ("$@"): This treats each element of $@ as a quoted string.
+        ```
+        Using "$@"
+        one
+        two
+        three four
+        ```
+    * case 4 ($@): This treats each element as an unquoted string, so the last one is split 
+        ```
+        Using $@
+        one 
+        two
+        three
+        four
+        ```
 
 
     
