@@ -246,6 +246,16 @@ function fnName () {
         four
         ```
 
+### Exercise
+1. `cd` is built into the Shell, why can't be implemented as a regular program?
+    * The `cd` commands modifies the "current working directory"", right? 
+    * "Current working directory" is a property that is unique to each process.
+    * So, if `cd` was a program it would work like this:
+        1. `cd foo`
+        2. The `cd` process starts
+        3. The `cd` process changes the directory for the `cd` process
+        4. The `cd` process exits.
+        5. Your shell still has the same state, including current working directory, that it did before you starts.
 
     
     
