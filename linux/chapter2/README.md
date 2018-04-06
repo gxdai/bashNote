@@ -135,6 +135,10 @@ In fact, any character on the keyboard that is not alphabetic or numeric is prob
 **Spetial character is differnt from regular character**
 <img src="./BashSpecialCharacter.png" alt="Bash Special Characters" width="500">
 
-
-
+#### Quoting in Bash
+Bash provides the backslah (\`) escape character, sinle quotes ('...'), double quotes ("..."), and ANSI-C quotes ($'...'). For example,
+```
+vi f\&g.c
+grep US\$ report.*
+```
 
