@@ -128,7 +128,12 @@ The shell displays a prompt when it is ready for your next command. In GNU Linux
 ```
 -bash-3.2$(#: for root)
 ```
+### Shell Special Characters and QUoting
 
+In fact, any character on the keyboard that is not alphabetic or numeric is probably special in some way. Notable exceptions are the period (.) and the underscore (_).
+
+**Spetial character is differnt from regular character**
+![Bash Special Characters](./BashSpecialCharacter.png | widh=100)
 
 
 
