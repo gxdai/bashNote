@@ -141,4 +141,36 @@ Bash provides the backslah (\`) escape character, sinle quotes ('...'), double q
 vi f\&g.c
 grep US\$ report.*
 ```
+The character & and $ lose their special meaning when preceded by \. Instead they stand for literal characters themselves. If a space or a tab is preceded by a \, then it becomes part of a word. If the NEWLINE is preceded by a \, it is equivalent to a blank. Thus, using a \ at then of a line continues the Shell command to the next line. To get the \ character without escapint the next character, use \\.
 
+**A pair of sinle quotation marks (') the entire string of characters enclosed.
+```
+echo 'a+b >= c*d'
+cat /usr/pwang/'my>=.c'
+echo It\'s a good day
+```
+
+Single Quote
+* All quoted characters, including \, are taken literally. Thus, excaping the single quote with backslash within a single-quoted string does not work.
+* The quoted string forms part or all of one word.
+
+
+Sometimes it is desiirable to allow certain expansions within a quoted string. Quoting with double quotation marks (") serves this perpose. A pair of double quotation marks functions the same as a pair of singel quotation marks with three differences:
+* First $ and ! works in inside double quotation marks.
+    ```
+    echo "Your host name is $HOSTNAME"
+    echo "Last command is !-1"
+    ```
+    work as expected.
+
+* Normally, the output of a command expansion, via $(..) or `...`, is broken into seprate words at blanks, tabs, and NEWLINEEs, with null works being discarded; this text then replaces the original backquoted string. However, 
+    ```
+    date=`date`
+    datestring="`date`"
+
+    echo $date
+    echo $datestring
+    Fri Apr  6 09:40:11 +04 2018
+    Fri Apr 6 09:40:11 +04 2018     # only one space between words
+    ```
+    
