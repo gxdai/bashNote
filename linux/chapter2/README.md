@@ -173,4 +173,5 @@ Sometimes it is desiirable to allow certain expansions within a quoted string. Q
     Fri Apr  6 09:40:11 +04 2018
     Fri Apr 6 09:40:11 +04 2018     # only one space between words
     ```
+* In double quotating marks, \\ escapes $, ', ", or NEWLINE. In addition \! (history command).
     
