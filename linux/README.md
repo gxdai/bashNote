@@ -328,3 +328,10 @@ Redirecting the output of one program as input to another program.
 <img alt="commands history" src="./cmd_history.png" width="600">
 
 * **alias**: `alias name=value ...` **Don't forget quotes**
+
+### Graphic command
+* **evince** for pdf, tiff and dvi.
+* **eog** - The Eye of gnome image viewer. Such as bmp, gif, jpeg, png, svg and tiff
+* **ImageMagick(display)** for editting raster and other image formats.
+* **Screen Capture(import)** for capturing visual screen.
+* 
