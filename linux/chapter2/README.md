@@ -190,7 +190,7 @@ function fnName () {
 
 **Each command inside a function must be terminated by a semicolon.**
 
-Difference between $@ and $\*. refer to all the arguments in the function call.
+[Difference between $@ and $\*](https://unix.stackexchange.com/questions/129072/whats-the-difference-between-and). refer to all the arguments in the function call.
 * $\* is a single string, $@ is acutall array. Here is the difference:
     ```
     \#!/bin/bash
