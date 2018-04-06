@@ -174,4 +174,49 @@ Sometimes it is desiirable to allow certain expansions within a quoted string. Q
     Fri Apr 6 09:40:11 +04 2018     # only one space between words
     ```
 * In double quotating marks, \\ escapes $, ', ", or NEWLINE. In addition \! (history command).
+* $'str' allows you to use ANSI-C escape characters in *str*.
+
+### Simple functions
+```
+function fnName () {
+    conmmand 1; 
+    command 2;
+    command 3;
+    ...
+    command n;
+}
+```
+**alias** doesn't work inside a function.
+
+**Each command inside a function must be terminated by a semicolon.**
+
+Difference between $@ and $\*. refer to all the arguments in the function call.
+* $\* is a single string, $@ is acutall array. Here is the difference:
+    ```
+    \#!/bin/bash
+    echo "Using \"$*\":"
+
+    for a in "$*"; do
+        echo $a
+    done
+
+    echo -e "\nUsing \$*:"
+    for a in $*; do
+        echo $a
+    done
+
+
+    echo -e "\nUsing \"$@\\":"
+    for a in "$@"; do
+        echo $a
+    done
+
+    echo -e "\nUsing $@:"
+    for a in $@; do
+        echo $a
+    done
+    ```
+
+
+    
     
