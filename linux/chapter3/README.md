@@ -10,4 +10,10 @@ head [-k] [file ...]
 ```
 tail [-k] [file ...]
 ```
+## Character Translation: tr
+The command `tr1` copys standard input to standard output, subtituting or delete specified characters. For example,
+```
+tr A-Z a-z <file1> file2
+```
+Creates *file2* as a copy of *file1* with all uppercase letters translated to the corresponding lowercase ones. Another exammple:
 
