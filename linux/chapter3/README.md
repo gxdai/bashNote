@@ -40,5 +40,14 @@ fold < file
 The **fold** will break up long lines yb insertting a NEWLINE character where necessary. The default is to limit lines to a length of 80 characters.
 * f     treats all uppercase letters as lowercase letter
 * n     sort by increasing magnitude
-* f     reverses the sense of comparisons and sorts lines in reverse order.
+* r     reverses the sense of comparisons and sorts lines in reverse order.
 
+Example:
+```
+ls -l | sort -n --key=5,6.0
+ls -l | sort -nr --key=5,6.0
+```
+sort the file by increasing byte count.
+
+## grep
+<img src="./grep.png" alt="grep argument" width="500">
