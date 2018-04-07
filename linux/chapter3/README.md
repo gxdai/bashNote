@@ -72,6 +72,11 @@ For example, match [9],
 [0-9A-z]		(match any of the indicated characters)
 ```
 Quoting a character that does not need quoting usually causes no harm.
+## Extended regular expression
+**grep -E or egrep**
+The precedence of operator 
+
+
 
 
 
