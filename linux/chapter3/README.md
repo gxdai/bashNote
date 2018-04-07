@@ -51,3 +51,28 @@ sort the file by increasing byte count.
 
 ## grep
 <img src="./grep.png" alt="grep argument" width="500">
+
+Generally speaking, the **grep** command is used either to obtain lines containing a specific pattern or to obtain the names of files with such lines.
+
+## Regular expression
+<img src="./re.png" alt="regular expression arguments" width="500">
+
+For example, in **vim**, you can search "step [1-9]" for any step
+```
+/step\ [1-9]
+```
+<img src="./re2.png" alt="regular expression pattern" width="500">
+<img src="./re3.png" alt="regular expression pattern" width="500">
+For example, match [9],
+``
+\[[0-9]\]
+\.\.\. 			(match ...)
+\/\*			(match /*)
+\\			(match \)
+[0-9A-z]		(match any of the indicated characters)
+```
+Quoting a character that does not need quoting usually causes no harm.
+
+
+
+ 
