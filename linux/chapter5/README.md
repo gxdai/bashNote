@@ -115,5 +115,13 @@ done
 ```
 For an infinite loop, use the Bash built-in command (:) (colon) as testExp. The **:** does nothing other than expand arguments and give a 0 exit status.
 
+```
+[[ "$go" == y\* ]]
+```
+For anything starts with y
 
-
+## Numerical Expressions
+Since Shell variables are string-valued. We need to use the *arithmetic expansion* 
+```
+$(( arith-expr ))
+```
