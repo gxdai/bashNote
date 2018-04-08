@@ -13,3 +13,17 @@ The file tree contains different types of files.
 The first character in an `ls -l` listing is a *file type symbol*.
 
 <img src="fts.png" alt="File Type Symbols" width="500">
+
+## Special file
+Two kinds of special files:
+* *character special file*, represents a byte-oriented I/O device, such display and printer.
+* *block special file*, represents a high-speed I/O device that transfers data in block (hard drive).
+## links
+Linux allows a directory entry to be a pointer to another file. Such as file pointer is called link. 
+* *hard link*. is not distinguishable from the original file. Hard links allow you to give different names to the same file within the same file system.
+	```
+	ln report report.txt
+	```
+* *symbolic link*. 
+
+
