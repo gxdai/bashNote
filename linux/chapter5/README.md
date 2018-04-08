@@ -125,3 +125,28 @@ Since Shell variables are string-valued. We need to use the *arithmetic expansio
 ```
 $(( arith-expr ))
 ```
+The shell built-in **let** could also be used to perform arithmetic operations.
+```
+let exp1 exp2
+```
+Comparison
+```
+if (( $a > $b ))
+```
+if a is greater than b
+## break and continue
+`break` is used inside `for, while, until`. When `break` is executed, control shifts to the first line after the end of the nearest enclosing iteration. Similarly, `continue` skips to the next iteration. Within nested loops, `break` and `continue` can take an optional integer argument (1, 2, 3, etc) to break or continue out of the *n*-th level of nested loops.
+
+## File Queries
+`help test` to get a complete list for file query.
+For example
+```
+if [[ -e $file && -f $file && -w $file ]]
+then
+    cat $1 >> $file
+else
+    echo "access problem for $file"
+fi
+```
+<img src="fq.png" alt="bash file queries" width="500">
+
