@@ -63,14 +63,6 @@ For example, in **vim**, you can search "step [1-9]" for any step
 ```
 <img src="./re2.png" alt="regular expression pattern" width="500">
 <img src="./re3.png" alt="regular expression pattern" width="500">
-For example, match \[9\],
-```
-\[[0-9]\]
-\.\.\. 			(match ...)
-\/\*			(match /*)
-\\			(match \\)
-[0-9A-z]		\(match any of the indicated characters\)
-```
 Quoting a character that does not need quoting usually causes no harm.
 ## Extended regular expression
 **grep -E or egrep**
