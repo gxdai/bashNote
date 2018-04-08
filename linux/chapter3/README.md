@@ -67,9 +67,11 @@ Quoting a character that does not need quoting usually causes no harm.
 
 ## Extended regular expression
 **grep -E or egrep**
-The precedence of operator 
+The precedence of operator used for extened regular expression is (), [], ", +, ?. It is safest to always enclose the entire pattern in a pair of single quotation marks.
 
-
+```
+grep '\-s`			(match -s; the \\ prevents -s from becoming a command options)
+```
 
 
 
