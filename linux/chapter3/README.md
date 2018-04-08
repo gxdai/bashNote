@@ -67,11 +67,21 @@ Quoting a character that does not need quoting usually causes no harm.
 
 ## Extended regular expression
 **grep -E or egrep**
+<img src="ere.png" alt="extended regular expression" width="600">
 The precedence of operator used for extened regular expression is (), [], ", +, ?. It is safest to always enclose the entire pattern in a pair of single quotation marks.
 
 ```
-grep '\-s`			(match -s; the \\ prevents -s from becoming a command options)
+grep '\-s`			(match -s; the \ prevents -s from becoming a command options)
+grep -i '^linux'		(matches linux at the front of a line, ignoring case)
+grep 'ch[0-9]*'			(matches ch followed by any number of digits)
+egrep \.html?\>			(matches a word ending in .htm or .html)
+egrep '\<\w+\.docx?' 		(matches any word followed by .doc or .docx)
 ```
+## A Stream Editor
+The **sed** program is a filter that uses line editting commands to transform input lines, from **stdin** or a file, and produces desired output.
+
+<img src="sed.png" alt="stream editor" width="600">
+
 
 
 
