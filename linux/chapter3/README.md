@@ -137,8 +137,25 @@ set '/<table .*>/,/<\/table>/!d' try.html > tables
 
 applies the action **d** to each line matching the single address `/^$/`, an address obtained by searching for the next empty line. The output will be the same as file, but with all empty lines deleted.
 
+## awk
+The **awk** is a powerfule yet simple filter (better than **sed**)
+```
+awk [-Fc] script [file] ...
+```
+The -F specifies a character c to be *field separator*
+1. IF there are no more input lines, terminate.
+2. Apply all **awk** pattern commands sequentially as specified in script.
+3. Go to Step 1.
+```
+ls | awk '/Linux/'
+```
+is the same as 
+```
+ls -l | sed -n '/Linux/p'
+```
+Rearrange the order of fields
+```
+ls -l | awk '{print $8, $5, $6}'
+```
+<src img="pattern.png" alt="pattern example" width="500">
 
-
-
-
- 
