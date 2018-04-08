@@ -24,6 +24,18 @@ Linux allows a directory entry to be a pointer to another file. Such as file poi
 	```
 	ln report report.txt
 	```
-* *symbolic link*. 
+	By default, **ln** forms hard links.
+* *symbolic link*. A symbolic link is a directory entry that contains the pathname of another file. 
+	```
+	ln -s filename linkname
+	```
+	Unlike hard link, here *filename* does not even have to be an existing file. 
+## File permission
+**rwx**
+* For a regular file, it is easy to understand
+* For a directory, execution permission for **cd** or **pwd**. read permission for **ls**. write permission for creating or deleting files in the directory.
+## Default File Protection Setting: umask
+When you create a new file, the system gives the file a default protection model. The Shell built-in command **umask** display the umask value as 
+
 
 
