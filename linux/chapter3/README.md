@@ -81,6 +81,62 @@ egrep '\<\w+\.docx?' 		(matches any word followed by .doc or .docx)
 The **sed** program is a filter that uses line editting commands to transform input lines, from **stdin** or a file, and produces desired output.
 
 <img src="sed.png" alt="stream editor" width="600">
+Example:
+```
+sed script [ file ] ...
+```
+
+Example:
+```
+sed 's/Web site/websit/' chapter1
+sed 's/Web site/website/g' chapter1
+```
+The first command reads the input file *chapter1*, substitutes(s) any first occurence of **Web site**, and outputs all lines, changes or not, to the standard output (only the first instance in the line will be replaced). To replace all occurences, use **g**.
+
+If no file is specified, **sed** edits from **stdin**. The single quotation marks around script to prevent the Shell interpretting any special characters in the script:
+`-f` for script file
+```
+sed -f double file
+```
+where double contains
+```
+s/$/\
+/
+```
+This will add an empty line after each line, producing a double-spaced output. In **grep**, $ means the end of a line.
+### Editting a range of lines
+General form
+```
+[address1], [address2] action [args]
+```
+* No address - The given action applied to every lien.
+* One address - The action applies to every line matching that address
+* Two address - The action is applied repeatedly to the next set of lines beginning with a line that matches address1, up to and including the first line that matches address2
+For example
+```
+sed '/^$/d' file
+sed '/[ 	]*$/d' file
+```
+
+Two address action
+```
+set '/<table .*>/,/<\/table>/d' try.html > notables.html
+```
+The delete line action action **d** si applied to all table lines.
+
+```
+sed -n '12,20p' file
+```
+Only outputs lines 12-20 of the given file
+```
+set '/<table .*>/,/<\/table>/p' try.html > tables
+set '/<table .*>/,/<\/table>/!d' try.html > tables
+```
+(!) reverses the senses of the specified address. It applies specified action to every line except the lines matching the given address.
+## Building piplines
+
+applies the action **d** to each line matching the single address `/^$/`, an address obtained by searching for the next empty line. The output will be the same as file, but with all empty lines deleted.
+
 
 
 
