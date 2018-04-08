@@ -83,5 +83,37 @@ to compare to integers arg1 and arg2 with a relational operator rop
 ```
 ==, !=, <, >, -le, -ge
 ```
+## shift
+The built-in command
+```
+shift
+```
+left shifts $2 to $1, $3 to #2, etc. In general
+```
+shift n
+```
+### case
+```
+case (str) in
+    pattern1)
+        commandlist1
+        ;;
+    pattern2)
+        commandlist2
+        ;;
+    ...
+esac
+```
+
+## while
+In addition to the **for** command, the **while** and **until** commands control iteration with an arbitrary condition.
+```
+while testExp
+do
+    commandlist
+done
+```
+For an infinite loop, use the Bash built-in command (:) (colon) as testExp. The **:** does nothing other than expand arguments and give a 0 exit status.
+
 
 
