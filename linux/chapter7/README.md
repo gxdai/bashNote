@@ -45,4 +45,10 @@ rsync -az pwang@monkey.cs.kent.edu:~/linux book ~/projects/
 ```
 Updates the local folder ~/projects/linux\_book, based on the remote folder ~/linux\_book by loging in as pwang on the remote host....
 
+## Setting up gnupg keys
+## Web
 
+### URLs 
+The web uses *uniform resource locators* (URLs) to identify resources (files and services) on the Internet.
+
+`whois` check domain information.
