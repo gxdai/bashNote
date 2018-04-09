@@ -104,6 +104,424 @@ Here is an example shows how the pathname `/bin/ls` leads from the root director
 
 <img src="fam.png" alt="File Address Mapping" width="500">
 
+## Mounted filesystems.
 
+The complete Linux file system may contain one or more filesystems, *root filesystem* and *mounted filesystem*.
+* The location of the i-list of the root filesystems is always known to the operating system.
+* A mounted filesystem is attached to the root filesystem at any directory in the root filesystem.
+    ```
+    mount [-r] devfile directory        (mount the filesystem stored at the block special file devfile at the given directory, -r: read-only)
+    umount directory
+    ```
+    The directory is called the root directory of the mounted filesystems.
+## find
+```
+find . -name \*.c -print
+```
+An expression is evaluated only if all preceding expressions are true. In other words, expression evaluation for the current file terminates on the first false expression, and the search process then goes on to the next file in the subtree.
+* -atime n          True if the file has last been accessed in n days.
+* -name pattern     True if the name the current file matches the given Glob pattern.
+* -newer file       Ture if the current file has been modified more recently than the given file
+* -print            Always True; causes the pathname of the current file to be displayed.
+* -exec cmd args    Execute the given shell cmd and returns true if cmd returns 0 exit status, 
+* -type t           True if the type the file is t, (b, c, d, f, l ,p, s)
+* -user userid      True if te file belongs to the user userid
+* (e1)              True if e1 is true
+* !e1               True if e1 is false
+* e1 e2             True if e1 and e2 are both true
+* e1 -o e2          True if one of e1 and e2 are true.
+## locate
+```
+locate gnome
+locate -b \gnome
+locate --regex \.html$
+```
+## Saving, compressing, and distributin Files
+The **tar** command copies entire *directory hierachies*. The **tar** command is often used together with common file compression schemes such as **gzip** and **bzip2**.
+Example
+```
+* tar cvf tarfile.tar name1 name2 ...
+* tar zcvf tarfile.tgz name1 name2 ...
+* tar jcvf tarfile.tbz name1 name2 ...
+```
+Then extracting command is 
+```
+* tar xvf tarfile.tar 
+* tar zxvf tarfile.tgz 
+* tar jxvf tarfile.tbz
+```
 
+The first one is to save the named file withouth compression, The second one with gzip compression, The third one bzip2 compression.
+* c create tarfile
+* v verbose
+* f tarfile name follows
+* z use gzip
+* j use bzip2
+### zip and unzip
+```
+zip -r archive.zip name1 name2 ...
+```
+## shar
+**shar** packs all the files into a single file of *sh* commands. The packed file is unpacked by letting *sh* process the file.
+## more file commands
+
+* basename removes prefixes and suffixes from a filename.
+* cmp compares two files to see if they are identitcal.
+* comm selects or rejects lines common to two sorted files.
+* df displays disk space free on all file systems.
+* diff compares two files or directories and outputs the differences.
+* du display all file sizes in kilobytes in a directory hierachy.
+* size display the size of an object file
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
+* split splits a file into pieces.
+* touch updates the last modfied time of a file.
+* uniq reports repeated lines in a file.
+* wc counts the nubmer of words, lines in given files.
 
