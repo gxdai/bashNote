@@ -334,4 +334,9 @@ Redirecting the output of one program as input to another program.
 * **eog** - The Eye of gnome image viewer. Such as bmp, gif, jpeg, png, svg and tiff
 * **ImageMagick(display)** for editting raster and other image formats.
 * **Screen Capture(import)** for capturing visual screen.
-* 
+
+### tar command
+```
+tar -xvf archive.tar -C target_directory
+```
+extract file to target directory
