@@ -210,6 +210,11 @@ and any files with suffix .list under the directory
         3. Should be install by default.
 3. Suggestions. 
     1. always backup sources.list
+4. Different repository
+    * Universe and multiverse repositories
+    * Partner repositories
+    * Other repositories
+    * personal package archive (ppa repositories)
 
 ## [Bash programming](https://www.linux.org/threads/programming-with-bash.4234/)
 `#1` (shebang) are followed with the path to Bash interpreter. (Example: `#!/bin/bash`)
