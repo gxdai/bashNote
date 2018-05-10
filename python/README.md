@@ -55,3 +55,35 @@ The Generator can only iterate over once.
 
 To master `yield`, you must understand that **When you call the function, the code you have written in the function body does not run.**.
 
+### Class inheritance
+Here is the syntax for subclass definition
+```
+class DerivedClassName(BaseClassName):
+    pass
+```
+
+Here is an example for `Employee` inherited from `Person`
+```
+class Person:
+    def __init__(self, first, last):
+        self.firstname = first
+        self.lastname = last
+
+    def Name(self):
+        return self.firstname + ", " + self.lastname
+
+
+class Employee(Person):
+    def __init__(self, first, last, staffnum):
+        Person.__init__(self, first, last)
+        self.staffnum = staffnum
+
+    def GetEmployee(self):
+        return self.Name() + ", " + self.staffnum
+```
+
+
+
+
+
+
