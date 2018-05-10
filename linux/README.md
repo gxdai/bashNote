@@ -345,3 +345,7 @@ Redirecting the output of one program as input to another program.
 tar -xvf archive.tar -C target_directory
 ```
 extract file to target directory
+
+### .a vs .so
+There are two types of Linux library. **Static library (.a)** and **Dynamically linked object library(.so)**
+
