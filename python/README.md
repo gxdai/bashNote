@@ -76,14 +76,49 @@ class Person:
 class Employee(Person):
     def __init__(self, first, last, staffnum):
         Person.__init__(self, first, last)
+        super().__init__(first, last)   # both work for super class
         self.staffnum = staffnum
 
     def GetEmployee(self):
         return self.Name() + ", " + self.staffnum
 ```
 
+The __init__ method of our Employee class explicitly invokes the __init__method of the Person class. We could have used super instead. super().__init__(first, last) is automatically replaced by a call to the superclasses method, in this case __init__:
 
+### Error handling
+There are generally two errors
+* syntax error.
+The parser repeats the offending line and displays a little `arrow` pointing at the earliest point in the line where the eror detected.
+* Exceptions
+Error detected during execution is called `exception` and are not unconditionally fatal.
 
+Here are some examples for handling exception error
+```
+while True:
+    try:
+        x = int(input("Please enter a number: "))
+        break
+    except ValueError:
+        print("Oops! That was no valid number. Try again")
+```
+Here are the explanations of `try`
+* First, the `try` clause` (the statements between `try` and `except`) is executed.
+* If no exception occurs, the `except clause` is skipped and execution of the `try` statement is finished.
+* If an exception occurs during execution of the try clause, the rest of the clause is skipped. Then if its type matches the exception named after the `except` keyword, the except  clause is executed, and then execution continues after `try` statement.
+* If an exception occurs which does not match the exception name in the next except clause, it is passed on to outer `try` statement.
 
+A `try` statement may have more than one except clause, to specifiy handlers for different exceptions. An except clause may name multiple exceptions as a parenthesized tuple, for example:
+``
+... except (RuntimeError, TypeError, NameError):
+...     pass
+```
 
+The except clause may specify a variable after exception name. 
 
+The `raise` statement allows the programmer to force a specified exception to occur. For example:
+```
+raise NameError('HiThere')
+```
+### `__init__.py`
+
+`__init__.py` for handling the python module recursively loading
