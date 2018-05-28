@@ -349,3 +349,4 @@ extract file to target directory
 ### .a vs .so
 There are two types of Linux library. **Static library (.a)** and **Dynamically linked object library(.so)**
 
+### `\`ls\`` == `$(sl)`
