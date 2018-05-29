@@ -24,3 +24,5 @@ There must be a tap before any command for makefile
 ### makefile2
 
 
+### `make -f filename`
+Specify the the makefilename
