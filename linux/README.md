@@ -350,3 +350,6 @@ extract file to target directory
 There are two types of Linux library. **Static library (.a)** and **Dynamically linked object library(.so)**
 
 ### `\`ls\`` == `$(sl)`
+
+### `$?` holds the value of the last command you run.
+### `return 0` if the command is succeed.
