@@ -103,4 +103,10 @@ $(EXECUTABLE): $(OBJECTIVES)
     $(CC) $(FLAGS) $< -o $@                     # $< the first prerequisite, $@ the name of the file being generated.
 ```
 
-    
+## makefile examples
+```
+[name of rule] : [list of other rules, separated by spaces] [list of sources, separated by spaces]
+
+[TAB] command to execute in the event that the rule is violated
+```
+**rule name is just a name**
