@@ -122,3 +122,6 @@ raise NameError('HiThere')
 ### `__init__.py`
 
 `__init__.py` for handling the python module recursively loading
+
+### zip
+`zip` will return `list`
