@@ -353,3 +353,6 @@ There are two types of Linux library. **Static library (.a)** and **Dynamically 
 
 ### `$?` holds the value of the last command you run.
 ### `return 0` if the command is succeed.
+
+### inode
+inode is the address of the file in disk
