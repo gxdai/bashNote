@@ -143,3 +143,5 @@ a1 = A(10, 20)
 a1.fn1(33)
 a1.fn2('hello')
 ```
+### print
+`from __future__ import print_function` makes the print function from python3.
