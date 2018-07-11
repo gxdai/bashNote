@@ -145,3 +145,7 @@ a1.fn2('hello')
 ```
 ### print
 `from __future__ import print_function` makes the print function from python3.
+
+### `_` underscore
+
+one `_` in python means private for example `_me` is private variable `class _me` is private classes. And they will be ignored when `from module import *` 
