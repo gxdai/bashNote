@@ -109,8 +109,8 @@ Here are the explanations of `try`
 
 A `try` statement may have more than one except clause, to specifiy handlers for different exceptions. An except clause may name multiple exceptions as a parenthesized tuple, for example:
 ```
-... except (RuntimeError, TypeError, NameError):
-...     pass
+except (RuntimeError, TypeError, NameError):
+   pass
 ```
 
 The except clause may specify a variable after exception name. 
