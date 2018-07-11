@@ -107,11 +107,13 @@ Here are the explanations of `try`
 * If an exception occurs during execution of the try clause, the rest of the clause is skipped. Then if its type matches the exception named after the `except` keyword, the except  clause is executed, and then execution continues after `try` statement.
 * If an exception occurs which does not match the exception name in the next except clause, it is passed on to outer `try` statement.
 
-A `try` statement may have more than one except clause, to specifiy handlers for different exceptions. An except clause may name multiple exceptions as a parenthesized tuple, for example:
+A `try` statement may have more than one except clause, to specifiy handlers for different exceptions. An except clause may name multiple exceptions as a parenthesized tuple, for example,
+
 ```
 except (RuntimeError, TypeError, NameError):
    pass
 ```
+
 
 The except clause may specify a variable after exception name. 
 
