@@ -108,7 +108,7 @@ Here are the explanations of `try`
 * If an exception occurs which does not match the exception name in the next except clause, it is passed on to outer `try` statement.
 
 A `try` statement may have more than one except clause, to specifiy handlers for different exceptions. An except clause may name multiple exceptions as a parenthesized tuple, for example:
-``
+```
 ... except (RuntimeError, TypeError, NameError):
 ...     pass
 ```
@@ -125,7 +125,7 @@ raise NameError('HiThere')
 
 ### zip
 `zip` will return `list`
-### __getattr__
+###` __getattr__`
 Only when method is not defined, __getattr__ will be called.
 ```
 class A(object):
@@ -142,9 +142,8 @@ class A(object):
 a1 = A(10, 20)
 a1.fn1(33)
 a1.fn2('hello')
-```
 ### print
-`from __future__ import print_function` makes the print function from python3.
+`from __future__ import print_function` makes the print function from python3
 
 ### `_` underscore
 
