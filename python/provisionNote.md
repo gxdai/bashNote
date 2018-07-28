@@ -18,3 +18,7 @@ elif k == ord('q'):   # press 'q' to save images and quit
     cv2.imwrite('messigray.png',img)
     cv2.destroyAllWindows()
 ```
+## Sepcial variables
+* `dir()`: return a list of scope variables.
+* `globals()`: return a dictionary of global variables.
+* `locals()`: return a dictionary of local variables.
