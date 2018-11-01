@@ -353,3 +353,15 @@ There are two types of Linux library. **Static library (.a)** and **Dynamically 
 
 ### `$?` holds the value of the last command you run.
 ### `return 0` if the command is succeed.
+
+### re
+```
+"^[A-Z]" at the beginning of a line
+"[^A]" Not A
+```
+
+`grep "\(grouping\)" GPL-3` only search for `grouping`
+`grep -E "(grouping)" GPL-3` only search for grouping`
+`egrep "(grouping)" GPL-3` only search for `grouping`.
+
+
