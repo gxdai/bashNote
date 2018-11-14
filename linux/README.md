@@ -354,6 +354,7 @@ There are two types of Linux library. **Static library (.a)** and **Dynamically 
 ### `$?` holds the value of the last command you run.
 ### `return 0` if the command is succeed.
 
+<<<<<<< HEAD
 ### re
 ```
 "^[A-Z]" at the beginning of a line
@@ -365,3 +366,7 @@ There are two types of Linux library. **Static library (.a)** and **Dynamically 
 `egrep "(grouping)" GPL-3` only search for `grouping`.
 
 
+=======
+### inode
+inode is the address of the file in disk
+>>>>>>> 61452e40f8a00a636df9807031c7aeaa1e94d0f7
