@@ -26,3 +26,5 @@ The method in the derive-class is overriding the method in base-class.
    * **\__double\_leading\_and\_double\_trailing\_underscore\_\_**: This is convention for special variables or methods.
 * To use as "Internationalization" 
 * To separate the digits of numbers.
+
+## `classmethod` denotes the method belongs to the class, not instance. 
